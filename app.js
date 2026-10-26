@@ -62,10 +62,11 @@
   const langLabel = document.getElementById('lang-label');
   const menuButton = document.getElementById('menu-button');
   const mobileNav = document.getElementById('mobile-nav');
+  const languageStorageKey = 'qabasone-language';
   let lang = 'ar';
   let selectedStep = 0;
 
-  function setLanguage(next) {
+  function setLanguage(next, remember = false) {
     lang = next === 'en' ? 'en' : 'ar';
     const t = translations[lang];
     root.lang = lang;
@@ -86,7 +87,9 @@
     langButton.title = langButton.getAttribute('aria-label');
     menuButton.setAttribute('aria-label',t.menuOpen);
     renderStep();
-    try { localStorage.setItem('qabasone-language',lang); } catch (_) { /* private mode */ }
+    if (remember) {
+      try { localStorage.setItem(languageStorageKey, lang); } catch (_) { /* storage unavailable */ }
+    }
   }
 
   function renderStep() {
@@ -105,7 +108,10 @@
     panel.setAttribute('aria-labelledby',`step-tab-${selectedStep}`);
   }
 
-  langButton.addEventListener('click',() => setLanguage(lang === 'ar' ? 'en' : 'ar'));
+  langButton.addEventListener('click',() => setLanguage(lang === 'ar' ? 'en' : 'ar', true));
+  window.addEventListener('storage', event => {
+    if (event.key === languageStorageKey) setLanguage(event.newValue);
+  });
   document.querySelectorAll('[data-step]').forEach(button => {
     button.addEventListener('click',() => {selectedStep = Number(button.dataset.step);renderStep();});
     button.addEventListener('keydown',e => {
@@ -148,6 +154,6 @@
   }
 
   let saved = 'ar';
-  try { saved = localStorage.getItem('qabasone-language') || 'ar'; } catch (_) { /* private mode */ }
+  try { saved = localStorage.getItem(languageStorageKey) || 'ar'; } catch (_) { /* storage unavailable */ }
   setLanguage(saved);
 })();

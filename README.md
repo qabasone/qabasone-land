@@ -16,7 +16,7 @@ Then visit `http://localhost:8080`.
 
 - `index.html` — semantic, SEO-aware homepage structure
 - `styles.css` — full responsive visual design, CSS illustrations, reduced-motion support
-- `app.js` — complete AR/EN translations, RTL/LTR toggle, mobile menu, interactive demo
+- `app.js` — complete AR/EN translations, RTL/LTR toggle with a saved language preference per browser, mobile menu, interactive demo
 - `assets/logo-mark.svg`, `assets/logo-mark-light.svg`, `assets/favicon.svg` — original conceptual QabasOne brand marks
 - `assets/underline.svg` — custom editorial signature stroke
 - `assets/og-cover.svg` — share-card artwork
