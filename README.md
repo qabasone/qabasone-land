@@ -25,7 +25,7 @@ No frameworks, bundlers, paid assets, trackers, or third-party JavaScript. Googl
 
 ## Customization
 
-- Main application CTA: currently `https://app.qabas.one`. Update the three links if needed.
+- Main application CTA: currently `https://dash.qabas.one`. Update the three links if needed.
 - All bilingual copy: edit the `translations` object in `app.js`.
 - Colors/typographic sizing: edit the design variables at the top of `styles.css`.
 - Concept brand mark: replace the original placeholder SVGs with an official logo when available.

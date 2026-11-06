@@ -10,3 +10,7 @@
 html[dir=ltr] .visual-frame{border-radius:15px 230px 20px 20px}
 html[dir=ltr] .visual-index{inset-inline-end:118px;top:43px}
 @media(max-width:600px){html[dir=ltr] .visual-frame{border-radius:13px 130px 17px 17px}.visual-index{display:none}}
+.contact-float{position:fixed;z-index:30;left:24px;bottom:calc(24px + env(safe-area-inset-bottom));display:inline-flex;align-items:center;gap:10px;padding:12px 17px;border:1px solid #dfe7dc;border-radius:999px;background:#fffefa;color:var(--green);box-shadow:0 8px 26px #20372d1a;font-size:12px;font-weight:600;white-space:nowrap;direction:ltr;transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s}
+.contact-float:hover{transform:translateY(-3px);border-color:#b9cbbd;box-shadow:0 12px 30px #20372d24}
+.contact-float svg{width:19px;height:19px;flex:none}
+@media(max-width:600px){.contact-float{left:16px;bottom:calc(16px + env(safe-area-inset-bottom));padding:11px 14px;font-size:11px}}

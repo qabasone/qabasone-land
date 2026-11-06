@@ -21,6 +21,7 @@
       step0:'شراء',step1:'مخزون',step2:'بيع',step3:'تحصيل',journeyNote:'مثال على ترابط العمليات، وليس بيانات حقيقية',
       closingEyebrow:'وقت الصورة الأوضح',closingHeading:'خلّي وقتك للشغل.<br>مش لتجميع تفاصيله.',closingBody:'قبس ون بيجمع الخيوط في مكان واحد. وإنت تركز على الخطوة الجاية.',closingCta:'افتح قبس ون',
       footerTagline:'كل تفصيلة في مكانها.',footerMade:'مصمم للوضوح. مبني لليوم الحقيقي.',backTop:'العودة للأعلى ↑',
+      contactEngineer:'تواصل مع مطوّر النظام',
       pageTitle:'قبس ون | كل تفصيلة في شغلك، في مكانها',metaDescription:'قبس ون — مساحة واحدة تجمع المبيعات والمشتريات والمخزون والتحصيل في صورة واضحة لأعمالك.',ogDescription:'شوف شغلك كصورة واحدة. نظام مترابط لإدارة عملياتك اليومية.',menuOpen:'فتح القائمة',menuClose:'إغلاق القائمة',
       steps:[
         {overline:'01 / البداية',title:'كل عملية شراء ليها بداية واضحة.',body:'سجّل التفاصيل من أولها، عشان تكمل رحلتها معاك من غير فقدان للسياق.',symbol:'↗'},
@@ -47,6 +48,7 @@
       step0:'Purchase',step1:'Inventory',step2:'Sale',step3:'Collection',journeyNote:'Illustrative flow only — not actual transactions',
       closingEyebrow:'TIME FOR A CLEARER VIEW',closingHeading:'Spend time doing the work.<br>Not piecing it together.',closingBody:'QabasOne brings the threads into one place so you can focus on the next move.',closingCta:'Open QabasOne',
       footerTagline:'Every moving part. In its place.',footerMade:'Designed for clarity. Built for real work.',backTop:'Back to top ↑',
+      contactEngineer:'Contact the engineer',
       pageTitle:'QabasOne | Every moving part. In its place.',metaDescription:'QabasOne brings sales, purchasing, inventory and collections into one connected view of your operation.',ogDescription:'One connected view of your business. A clearer way to work.',menuOpen:'Open menu',menuClose:'Close menu',
       steps:[
         {overline:'01 / THE START',title:'Give every purchase a clear beginning.',body:'Capture the essentials so the context travels with the transaction.',symbol:'↗'},
